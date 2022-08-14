@@ -10,27 +10,25 @@ export default {
 <template>
   <v-row justify="center">
     <v-btn color="primary" dark
-        @click.stop="dialog = true">ADD TASK
+           @click.stop="dialog = true">ADD TASK
     </v-btn>
     <v-dialog v-model="dialog" max-width="290">
       <v-card>
         <v-card-title>
-          <span class="text-h5">Use Google's location service?</span>
+          ADD TEST
         </v-card-title>
 
         <v-card-text>
-
+          <input placeholder="Question" class="form-input" type="text">
         </v-card-text>
 
         <v-card-actions>
           <v-spacer></v-spacer>
-          <v-btn color="green darken-1" text
-                 @click="dialog = false">
-            Disagree
+          <v-btn color="red darken-1" text
+                 @click="dialog = false">CLOSE
           </v-btn>
           <v-btn color="green darken-1" text
-                 @click="dialog = false">
-            Agree
+                 @click="dialog = false">ADD
           </v-btn>
         </v-card-actions>
 
@@ -40,4 +38,8 @@ export default {
 </template>
 
 <style>
+.form-input {
+  outline: none;
+  border-bottom: 1px solid #333;
+}
 </style>

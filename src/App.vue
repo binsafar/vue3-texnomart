@@ -5,10 +5,10 @@
   <header>
     <div class="wrapper">
       <nav>
-        <RouterLink class="router" to="/test-tasks">Test tasks</RouterLink>
         <RouterLink class="router" to="/validation">Validation Form</RouterLink>
         <RouterLink class="router" to="/list-of-students">List of students</RouterLink>
         <RouterLink class="router" to="/auth">Authentication</RouterLink>
+        <RouterLink class="router" to="/test-tasks">Test tasks</RouterLink>
       </nav>
     </div>
   </header>
